@@ -34,7 +34,12 @@
 			"lang": "zh-tw",
 			"name": "正體中文",
 			"path": "./lang/zh-TW.json"
-	   }
+	   	}
+		{
+			"lang": "de",
+			"name": "Deutsch",
+			"path": "./lang/de.json"
+		},
 	],
 	"esmodules": ["./torch.js"],
 	"socket": true,
