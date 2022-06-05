@@ -1,0 +1,21 @@
+{
+	"I18N.LANGUAGE": "Deutsch",
+	"I18N.MAINTAINERS": ["ToGreedy"],
+
+	"torch.playerTorches.name": "Spieler Fackeln",
+	"torch.playerTorches.hint": "Erlaubt es Spielern, ihre eigenen Fackeln umzuschalten.",
+	"torch.brightRadius.hint": "Wie viele Rastereinheiten helles Licht sollen ausgestrahlt werden.",
+	"torch.dimRadius.hint": "Wie viele Rastereinheiten gedämpftes Licht sollen ausgestrahlt werden.",
+	"torch.gmUsesInventory.name": "GM verwendet Inventar",
+	"torch.gmUsesInventory.hint": "Wenn diese Option gesetzt ist, verwendet der GM beim Umschalten einer Fackel das Inventar des Spielers.",
+	"torch.gmInventoryItemName.name": "Name des Inventargegenstandes",
+	"torch.gmInventoryItemName.hint": "Name des zu verwendenden Inventargegenstandes, wenn \"GM verwendet Inventar\" eingestellt ist.",
+	"torch.offBrightRadius.name": "Leuchtet hell, wenn ausgeschaltet",
+	"torch.offBrightRadius.hint": "Wie viele Rastereinheiten helles Licht abgegeben werden sollen, wenn das Licht ausgeschaltet wird.",
+	"torch.offDimRadius.name": "Leuchtet gedämpft, wenn ausgeschaltet",
+	"torch.offDimRadius.hint": "Wie viele Rastereinheiten des gedämpften Licht abgegeben werden sollen, wenn das Licht ausgeschaltet wird.",
+	"torch.turnOffAllLights": "Erzwingen Sie Hell- und Dimmwerte für die konfigurierten Werte \"Aus\".",
+	"torch.holdCtrlOnClick": "Halte <span class=\"key\">Ctrl</span> beim Klick",
+	"torch.dancingLightVision.name": "Geben Sie \"Dancing Lights\" sicht.",
+	"torch.dancingLightVision.hint": "Wenn diese Option gesetzt ist, hat jedes \"Dancing Light\" sicht und kann dazu verwendet werden, Bereiche der Karte aufzudecken, die Spieler nicht sehen können."
+}
