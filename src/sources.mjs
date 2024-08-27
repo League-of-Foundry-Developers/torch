@@ -511,6 +511,7 @@ export default {
       "Torches": {
         "type": "item",
         "consumable": true,
+"states": 2,
         "light": [
           {
             "bright": 20, "dim": 30, "angle": 360, "color": "#ff9329", "alpha": 0.5,
@@ -521,6 +522,7 @@ export default {
       "Lantern": {
         "type": "item",
         "consumable": false,
+        "states": 2,
         "light": [
           {
             "bright": 20, "dim": 30, "angle": 360, "color": "#ff9329", "alpha": 0.5,
