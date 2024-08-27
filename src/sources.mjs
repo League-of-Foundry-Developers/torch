@@ -2,7 +2,7 @@ export default {
   "dnd5e": {
     "system": "dnd5e",
     "topology": "standard",
-    "quantity" : "quantity",
+    "quantity": "quantity",
     "aliases": {
       "Lantern, Hooded": "Hooded Lantern",
       "Lantern, Bullseye": "Bullseye Lantern"
@@ -71,13 +71,13 @@ export default {
         "light": [
           { "bright": 0, "dim": 10, "angle": 360 }
         ]
-      }                
+      }
     }
   },
   "swade": {
     "system": "swade",
     "topology": "standard",
-    "quantity" : "quantity",
+    "quantity": "quantity",
     "sources": {
       "Candle": {
         "name": "Candle",
@@ -85,7 +85,7 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 0, "dim": 2, "angle": 360}
+          { "bright": 0, "dim": 2, "angle": 360 }
         ]
       },
       "Flashlight": {
@@ -94,7 +94,7 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 10, "dim": 10, "angle": 6}
+          { "bright": 10, "dim": 10, "angle": 6 }
         ]
       },
       "Lantern": {
@@ -103,7 +103,7 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 4, "dim": 4, "angle": 360}
+          { "bright": 4, "dim": 4, "angle": 360 }
         ]
       },
       "Torch": {
@@ -112,15 +112,15 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 4, "dim": 4, "angle": 360}
+          { "bright": 4, "dim": 4, "angle": 360 }
         ]
-      }    
+      }
     }
   },
   "pf1": {
     "system": "pf1",
     "topology": "standard",
-    "quantity" : "quantity",
+    "quantity": "quantity",
     "sources": {
       "Candle": {
         "name": "Candle",
@@ -128,7 +128,7 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 0, "dim": 5, "angle": 360}
+          { "bright": 0, "dim": 5, "angle": 360 }
         ]
       },
       "Lamp": {
@@ -137,7 +137,7 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 15, "dim": 30, "angle": 360}
+          { "bright": 15, "dim": 30, "angle": 360 }
         ]
       },
       "Lantern": {
@@ -146,7 +146,7 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 30, "dim": 60, "angle": 360}
+          { "bright": 30, "dim": 60, "angle": 360 }
         ]
       },
       "Bullseye Lantern": {
@@ -155,7 +155,7 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 60, "dim": 120, "angle": 90}
+          { "bright": 60, "dim": 120, "angle": 90 }
         ]
       },
       "Hooded Lantern": {
@@ -164,7 +164,7 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 30, "dim": 60, "angle": 360}
+          { "bright": 30, "dim": 60, "angle": 360 }
         ]
       },
       "Miner's Lantern": {
@@ -173,7 +173,7 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 30, "dim": 60, "angle": 90}
+          { "bright": 30, "dim": 60, "angle": 90 }
         ]
       },
       "Torch": {
@@ -182,7 +182,7 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 20, "dim": 40, "angle": 360}
+          { "bright": 20, "dim": 40, "angle": 360 }
         ]
       }
     }
@@ -190,7 +190,7 @@ export default {
   "pf2e": {
     "system": "pf2e",
     "topology": "standard",
-    "quantity" : "quantity",
+    "quantity": "quantity",
     "sources": {
       "Candle": {
         "name": "Candle",
@@ -198,7 +198,7 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 0, "dim": 10, "angle": 360}
+          { "bright": 0, "dim": 10, "angle": 360 }
         ]
       },
       "Lantern (Hooded)": {
@@ -207,8 +207,8 @@ export default {
         "consumable": false,
         "states": 3,
         "light": [
-          {"bright": 30, "dim": 60, "angle": 360}, 
-          {"bright": 0, "dim": 5, "angle": 360}
+          { "bright": 30, "dim": 60, "angle": 360 },
+          { "bright": 0, "dim": 5, "angle": 360 }
         ]
       },
       "Lantern (Bull's Eye)": {
@@ -217,7 +217,7 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 60, "dim": 120, "angle": 90}
+          { "bright": 60, "dim": 120, "angle": 90 }
         ]
       },
       "Torch": {
@@ -226,7 +226,7 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 20, "dim": 40, "angle": 360}
+          { "bright": 20, "dim": 40, "angle": 360 }
         ]
       },
       "Everburning Torch": {
@@ -235,8 +235,10 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          { "bright": 20, "dim": 40, "color":"#57cdff", "saturation":0.3, "contrast":0.3, "shadows":0.2, "angle": 360,
-			      "animation": { "type": "torch", "speed": 1, "intensity": 7, "reverse": false }}
+          {
+            "bright": 20, "dim": 40, "color": "#57cdff", "saturation": 0.3, "contrast": 0.3, "shadows": 0.2, "angle": 360,
+            "animation": { "type": "torch", "speed": 1, "intensity": 7, "reverse": false }
+          }
         ]
       }
     }
@@ -305,7 +307,7 @@ export default {
   "earthdawn4e": {
     "system": "earthdawn4e",
     "topology": "standard",
-    "quantity" : "amount",
+    "quantity": "amount",
     "sources": {
       "Candle": {
         "name": "Candle",
@@ -313,7 +315,7 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 0, "dim": 3, "angle": 360}
+          { "bright": 0, "dim": 3, "angle": 360 }
         ]
       },
       "Lantern (Hooded)": {
@@ -322,8 +324,8 @@ export default {
         "consumable": false,
         "states": 3,
         "light": [
-          {"bright": 10, "dim": 10, "angle": 360}, 
-          {"bright": 0, "dim": 10, "angle": 360}
+          { "bright": 10, "dim": 10, "angle": 360 },
+          { "bright": 0, "dim": 10, "angle": 360 }
         ]
       },
       "Lantern (Bullseye)": {
@@ -332,7 +334,7 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 20, "dim": 20, "angle": 3}
+          { "bright": 20, "dim": 20, "angle": 3 }
         ]
       },
       "Torch": {
@@ -341,9 +343,9 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 10, "dim": 10, "angle": 360}
+          { "bright": 10, "dim": 10, "angle": 360 }
         ]
-      }            
+      }
     }
   },
   "gurps": {
@@ -357,7 +359,7 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 0, "dim": 2, "angle": 360, "color": "#ff9329", "alpha": 0.6 }
+          { "bright": 0, "dim": 2, "angle": 360, "color": "#ff9329", "alpha": 0.6 }
         ]
       },
       "Flashlight, Heavy": {
@@ -366,8 +368,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 30, "dim": 30, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
-        ]    
+          { "bright": 30, "dim": 30, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
+        ]
       },
       "Mini Flashlight": {
         "name": "Mini Flashlight",
@@ -375,8 +377,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 4, "dim": 5, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
-        ]    
+          { "bright": 4, "dim": 5, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
+        ]
       },
       "Micro Flashlight": {
         "name": "Micro Flashlight",
@@ -384,8 +386,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 1, "dim": 1, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
-        ]    
+          { "bright": 1, "dim": 1, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
+        ]
       },
       "Survival Flashlight": {
         "name": "Survival Flashlight",
@@ -393,8 +395,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 1, "dim": 1, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
-        ]    
+          { "bright": 1, "dim": 1, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
+        ]
       },
       "Lantern": {
         "name": "Lantern",
@@ -402,8 +404,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 4, "dim": 5, "angle": 360, "color": "#ff9329", "alpha": 1 }
-        ]    
+          { "bright": 4, "dim": 5, "angle": 360, "color": "#ff9329", "alpha": 1 }
+        ]
       },
       "Torch": {
         "name": "Torch",
@@ -411,8 +413,8 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          {"bright": 9, "dim": 10, "angle": 360, "color": "#ff9329", "alpha": 1 }
-        ]    
+          { "bright": 9, "dim": 10, "angle": 360, "color": "#ff9329", "alpha": 1 }
+        ]
       },
       "Bull's-Eye Lantern": {
         "name": "Bull's-Eye Lantern",
@@ -420,8 +422,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 9, "dim": 10, "angle": 57, "color": "#ff9329", "alpha": 1 }
-        ]    
+          { "bright": 9, "dim": 10, "angle": 57, "color": "#ff9329", "alpha": 1 }
+        ]
       },
       "Electric Lantern, Small": {
         "name": "Electric Lantern, Small",
@@ -429,8 +431,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 3, "dim": 3, "angle": 360, "color": "#ff9329", "alpha": 1 }
-        ]    
+          { "bright": 3, "dim": 3, "angle": 360, "color": "#ff9329", "alpha": 1 }
+        ]
       },
       "Electric Lantern, Large": {
         "name": "Electric Lantern, Large",
@@ -438,8 +440,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 4, "dim": 5, "angle": 360, "color": "#ff9329", "alpha": 1 }
-        ]    
+          { "bright": 4, "dim": 5, "angle": 360, "color": "#ff9329", "alpha": 1 }
+        ]
       },
       "Small Tactical Light": {
         "name": "Small Tactical Light",
@@ -447,8 +449,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 22, "dim": 25, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
-        ]    
+          { "bright": 22, "dim": 25, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
+        ]
       },
       "Large Tactical Light": {
         "name": "Large Tactical Light",
@@ -456,8 +458,8 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 95, "dim": 100, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
-        ]    
+          { "bright": 95, "dim": 100, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
+        ]
       },
       "Floodlight": {
         "name": "Floodlight",
@@ -465,15 +467,15 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 190, "dim": 200, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
-        ]    
+          { "bright": 190, "dim": 200, "angle": 6, "color": "#ffd6aa", "alpha": 1 }
+        ]
       }
     }
   },
   "dcc": {
     "system": "dcc",
     "topology": "standard",
-    "quantity" : "quantity",
+    "quantity": "quantity",
     "aliases": {
       "Lantern": "Oil"
     },
@@ -484,9 +486,9 @@ export default {
         "consumable": true,
         "states": 2,
         "light": [
-          { 
+          {
             "bright": 15, "dim": 30, "angle": 360, "color": "#ff9329", "alpha": 0.2,
-            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
           }
         ]
       },
@@ -496,9 +498,9 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          { 
+          {
             "bright": 15, "dim": 30, "angle": 360, "color": "#ff9329", "alpha": 0.2,
-            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 	            
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
           }
         ]
       }
@@ -511,16 +513,18 @@ export default {
       "Torches": {
         "type": "item",
         "consumable": true,
+        "states": 2,
         "light": [
           {
             "bright": 20, "dim": 30, "angle": 360, "color": "#ff9329", "alpha": 0.5,
             "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
           }
         ]
-      }, 
+      },
       "Lantern": {
         "type": "item",
         "consumable": false,
+        "states": 2,
         "light": [
           {
             "bright": 20, "dim": 30, "angle": 360, "color": "#ff9329", "alpha": 0.5,
@@ -531,206 +535,206 @@ export default {
     }
   },
   "reclaim-the-wild": {
-		"system": "reclaim-the-wild",
-		"topology": "standard",
-		"quantity" : "quantity",
-		"aliases": {	
-		},
-		"sources": {
-			"Candle": {
-				"name": "Candle",
-				"type": "equipment",
-				"consumable": true,
-				"states": 2,
-				"light": [
-				{ 
-				"bright": 0, "dim": 1, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Firewood": {
-				"name": "Firewood",
-				"type": "equipment",
-				"consumable": true,
-				"states": 2,
-				"light": [
-				{ 
-				"bright": 2, "dim": 8, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Lantern (1h, R0)": {
-				"name": "Lantern (1h, R0)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 3,
-				"light": [
-				{ 
-				"bright": 2, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				},
-				{ 
-				"bright": 5, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Lantern (1h, R1)": {
-				"name": "Lantern (1h, R1)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 3,
-				"light": [
-				{ 
-				"bright": 2, "dim": 3, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				},
-				{ 
-				"bright": 6, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Lantern (1h, R2)": {
-				"name": "Lantern (1h, R2)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 3,
-				"light": [
-				{ 
-				"bright": 3, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				},
-				{ 
-				"bright": 7, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Lantern (1h, R3)": {
-				"name": "Lantern (1h, R3)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 3,
-				"light": [
-				{ 
-				"bright": 3, "dim": 4, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				},
-				{ 
-				"bright": 8, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Lantern (1h, R4)": {
-				"name": "Lantern (1h, R4)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 3,
-				"light": [
-				{ 
-				"bright": 4, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				},
-				{ 
-				"bright": 9, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Lantern (1h, R5)": {
-				"name": "Lantern (1h, R5)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 3,
-				"light": [
-				{ 
-				"bright": 4, "dim": 5, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				},
-				{ 
-				"bright": 10, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Torch (1h, R0)": {
-				"name": "Torch (1h, R0)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 2,
-				"light": [
-				{ 
-				"bright": 4, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Torch (1h, R1)": {
-				"name": "Torch (1h, R1)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 2,
-				"light": [
-				{ 
-				"bright": 4, "dim": 5, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Torch (1h, R2)": {
-				"name": "Torch (1h, R2)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 2,
-				"light": [
-				{ 
-				"bright": 5, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Torch (1h, R3)": {
-				"name": "Torch (1h, R3)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 2,
-				"light": [
-				{ 
-				"bright": 5, "dim": 6, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Torch (1h, R4)": {
-				"name": "Torch (1h, R4)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 2,
-				"light": [
-				{ 
-				"bright": 6, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			},
-			"Torch (1h, R5)": {
-				"name": "Torch (1h, R5)",
-				"type": "equipment",
-				"consumable": false,
-				"states": 2,
-				"light": [
-				{ 
-				"bright": 6, "dim": 7, "angle": 360, "color": "#ff9329", "alpha": 0.5,
-				"animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false } 
-				}
-				]
-			}
-		}
-	},
+    "system": "reclaim-the-wild",
+    "topology": "standard",
+    "quantity": "quantity",
+    "aliases": {
+    },
+    "sources": {
+      "Candle": {
+        "name": "Candle",
+        "type": "equipment",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          {
+            "bright": 0, "dim": 1, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Firewood": {
+        "name": "Firewood",
+        "type": "equipment",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          {
+            "bright": 2, "dim": 8, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Lantern (1h, R0)": {
+        "name": "Lantern (1h, R0)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 3,
+        "light": [
+          {
+            "bright": 2, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          },
+          {
+            "bright": 5, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Lantern (1h, R1)": {
+        "name": "Lantern (1h, R1)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 3,
+        "light": [
+          {
+            "bright": 2, "dim": 3, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          },
+          {
+            "bright": 6, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Lantern (1h, R2)": {
+        "name": "Lantern (1h, R2)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 3,
+        "light": [
+          {
+            "bright": 3, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          },
+          {
+            "bright": 7, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Lantern (1h, R3)": {
+        "name": "Lantern (1h, R3)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 3,
+        "light": [
+          {
+            "bright": 3, "dim": 4, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          },
+          {
+            "bright": 8, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Lantern (1h, R4)": {
+        "name": "Lantern (1h, R4)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 3,
+        "light": [
+          {
+            "bright": 4, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          },
+          {
+            "bright": 9, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Lantern (1h, R5)": {
+        "name": "Lantern (1h, R5)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 3,
+        "light": [
+          {
+            "bright": 4, "dim": 5, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          },
+          {
+            "bright": 10, "dim": 0, "angle": 85, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Torch (1h, R0)": {
+        "name": "Torch (1h, R0)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 4, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Torch (1h, R1)": {
+        "name": "Torch (1h, R1)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 4, "dim": 5, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Torch (1h, R2)": {
+        "name": "Torch (1h, R2)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 5, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Torch (1h, R3)": {
+        "name": "Torch (1h, R3)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 5, "dim": 6, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Torch (1h, R4)": {
+        "name": "Torch (1h, R4)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 6, "dim": 0, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      },
+      "Torch (1h, R5)": {
+        "name": "Torch (1h, R5)",
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 6, "dim": 7, "angle": 360, "color": "#ff9329", "alpha": 0.5,
+            "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
+          }
+        ]
+      }
+    }
+  },
   "dragonbane": {
     "system": "dragonbane",
     "topology": "standard",
@@ -742,7 +746,7 @@ export default {
         "consumable": false,
         "light": [
           {
-            "bright": 10, "dim": 10, "angle": 360, "alpha": 0.1, "color":"#f9f06b",
+            "bright": 10, "dim": 10, "angle": 360, "alpha": 0.1, "color": "#f9f06b",
             "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
           }
         ]
@@ -753,7 +757,7 @@ export default {
         "consumable": false,
         "light": [
           {
-            "bright": 10, "dim": 10, "angle": 360, "alpha": 0.1, "color":"#f9f06b",
+            "bright": 10, "dim": 10, "angle": 360, "alpha": 0.1, "color": "#f9f06b",
             "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
           }
         ]
@@ -764,7 +768,7 @@ export default {
         "consumable": false,
         "light": [
           {
-            "bright": 10, "dim": 10, "angle": 360, "alpha": 0.1, "color":"#f9f06b",
+            "bright": 10, "dim": 10, "angle": 360, "alpha": 0.1, "color": "#f9f06b",
             "animation": { "type": "torch", "speed": 5, "intensity": 5, "reverse": false }
           }
         ]
@@ -775,7 +779,7 @@ export default {
         "consumable": false,
         "light": [
           {
-            "bright": 4, "dim": 4, "angle": 360, "alpha": 0.1, "color":"#f9f06b",
+            "bright": 4, "dim": 4, "angle": 360, "alpha": 0.1, "color": "#f9f06b",
             "animation": { "type": "torch", "speed": 5, "intensity": 3, "reverse": false }
           }
         ]
@@ -790,53 +794,60 @@ export default {
       "Lantern, Spotlight": "Spotlight Lantern"
     },
     "sources": {
-        "Candle": {
-          "name": "Candle",
-          "type": "item",
-          "consumable": true,
-          "states": 2,
-          "light": [
-            { "bright": 1, "dim": 2, "angle": 360, "color": "#ff9329", "alpha": 0.1,
-              "animation": {"type": "torch", "speed": "3", "intensity": "1", "reverse": false}
-            }
-          ]
-        },
-        "Torch": {
-          "name": "Torch",
-          "type": "item",
-          "consumable": true,
-          "states": 2,
-          "light": [
-            { "bright": 5, "dim": 10, "angle": 360, "color": "#ff9329", "alpha": 0.1,
-            "animation": {"type": "torch", "speed": "1", "intensity": "5", "reverse": false}}
-          ]
-        },
-        "Spotlight Lantern": {
-          "name": "Spotlight Lantern",
-          "type": "item",
-          "consumable": false,
-          "states": 2,
-          "light": [
-            { "bright": 20, "dim": 40, "angle": 53,
-            "animation": {"type": "torch", "speed": "1", "intensity": "10", "reverse": false} }
-          ]
-        },
-        "Lantern": {
-          "name": "Lantern",
-          "type": "item",
-          "consumable": false,
-          "states": 3,
-          "light": [
-            { "bright": 10, "dim": 20, "angle": 360,
-            "animation": {"type": "torch", "speed": "1", "intensity": "10", "reverse": false} }
-          ]
+      "Candle": {
+        "name": "Candle",
+        "type": "item",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          {
+            "bright": 1, "dim": 2, "angle": 360, "color": "#ff9329", "alpha": 0.1,
+            "animation": { "type": "torch", "speed": "3", "intensity": "1", "reverse": false }
+          }
+        ]
+      },
+      "Torch": {
+        "name": "Torch",
+        "type": "item",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          {
+            "bright": 5, "dim": 10, "angle": 360, "color": "#ff9329", "alpha": 0.1,
+            "animation": { "type": "torch", "speed": "1", "intensity": "5", "reverse": false }
+          }
+        ]
+      },
+      "Spotlight Lantern": {
+        "name": "Spotlight Lantern",
+        "type": "item",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 20, "dim": 40, "angle": 53,
+            "animation": { "type": "torch", "speed": "1", "intensity": "10", "reverse": false }
+          }
+        ]
+      },
+      "Lantern": {
+        "name": "Lantern",
+        "type": "item",
+        "consumable": false,
+        "states": 3,
+        "light": [
+          {
+            "bright": 10, "dim": 20, "angle": 360,
+            "animation": { "type": "torch", "speed": "1", "intensity": "10", "reverse": false }
+          }
+        ]
       }
     }
   },
   "default": {
     "system": "default",
     "topology": "none",
-    "quantity" : "quantity",
+    "quantity": "quantity",
     "sources": {
       "Self": {
         "name": "Self",
@@ -844,9 +855,9 @@ export default {
         "consumable": false,
         "states": 2,
         "light": [
-          {"bright": 40, "dim":20, "angle": 360}
+          { "bright": 40, "dim": 20, "angle": 360 }
         ]
-      }            
+      }
     }
   }
 }
