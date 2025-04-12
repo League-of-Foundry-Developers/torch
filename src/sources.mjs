@@ -6,6 +6,14 @@ export default {
     "aliases": {
       "Lantern, Hooded": "Hooded Lantern",
       "Lantern, Bullseye": "Bullseye Lantern",
+	  "Antorcha": "Torch",
+	  "Vela": "Candle",
+	  "Linterna Sorda": "Hooded Lantern",
+	  "Linterna Ojo de Buey": "Bullseye Lantern",
+	  "Luz": "Light",
+	  "Luces Danzantes": "Dancing Lights",
+	  "Crear llama, flamear": "Produce Flame",
+	  "Candil": "Lamp"
     },
     "sources": {
       "Candle": {
