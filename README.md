@@ -24,6 +24,7 @@ Out of the box, the following are available:
 | dragonbane | Lantern, Oil Lamp, Torch, Tallow Candle
 | demonlord  | Candle, Lantern, Spotlight Lantern, Torch 
 | wwn | Torch, Lantern, Flamesight, The Light of Faith
+| CoC7 | Torch, Candle, Lamp, Lantern, Flare
 
 This module works by changing the token's light settings, so the only properties you can control are those available to a token, not those available to a light as created in Lighting Controls. 
 
