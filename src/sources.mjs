@@ -918,8 +918,8 @@ export default {
         "states": 2,
         "light": [
           {
-            "bright": 20,
-            "dim": 40,
+            "bright": 2,
+            "dim": 4,
             "angle": 360,
           },
         ],
@@ -930,8 +930,8 @@ export default {
         "states": 2,
         "light": [
           {
-            "bright": 15,
-            "dim": 45,
+            "bright": 3,
+            "dim": 6,
             "angle": 360,
           },
         ],
@@ -942,8 +942,8 @@ export default {
         "states": 2,
         "light": [
           {
-            "bright": 60,
-            "dim": 120,
+            "bright": 4,
+            "dim": 10,
             "angle": 57,
           },
         ],
@@ -954,8 +954,8 @@ export default {
         "states": 2,
         "light": [
           {
-            "bright": 5,
-            "dim": 10,
+            "bright": 1,
+            "dim": 3,
             "angle": 360,
           },
         ],
@@ -966,8 +966,8 @@ export default {
         "states": 2,
         "light": [
           {
-            "bright": 100,
-            "dim": 200,
+            "bright": 10,
+            "dim": 15,
             "angle": 360,
             "color": "#ff9329",
             "alpha": 0.5,
@@ -977,6 +977,158 @@ export default {
               "intensity": 5,
               "reverse": false,
             },
+          },
+        ],
+      },
+    },
+  },
+  "ac2d20": {
+    "system": "ac2d20",
+    "topology": "standard",
+    "quantity": "quantity",
+    "aliases": {
+      "Antorcha": "Torch",
+      "Candelabro": "Candle",
+      "Candil": "Lamp",
+      "Lámpara": "Lamp",
+      "Linterna": "Lantern",
+      "Bengala": "Flare",
+      "Pistola de bengalas": "Flare",
+      "Vela": "Candle",
+    },
+    "sources": {
+      "Torch": {
+        "type": "equipment",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          {
+            "bright": 2,
+            "dim": 4,
+            "angle": 360,
+          },
+        ],
+      },
+      "Lamp": {
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 3,
+            "dim": 6,
+            "angle": 360,
+          },
+        ],
+      },
+      "Lantern": {
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 4,
+            "dim": 10,
+            "angle": 57,
+          },
+        ],
+      },
+      "Candle": {
+        "type": "equipment",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          {
+            "bright": 1,
+            "dim": 3,
+            "angle": 360,
+          },
+        ],
+      },
+      "Flare": {
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 10,
+            "dim": 15,
+            "angle": 360,
+            "color": "#ff9329",
+            "alpha": 0.5,
+            "animation": {
+              "type": "sunburst",
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+            },
+          },
+        ],
+      },
+    },
+  },
+  "zweihander": {
+    "system": "zweihander",
+    "topology": "standard",
+    "quantity": "quantity",
+    "aliases": {
+      "Antorcha": "Torch",
+      "Box of Matches": "Candle",
+      "Caja de cerillas": "Candle",
+      "Farol de seguridad": "Lantern",
+      "Flint and Steel Striker": "Candle",
+      "Lámpara": "Lamp",
+      "Linterna": "Lantern",
+      "Storm Lantern": "Lantern",
+      "Vela": "Candle",
+      "Yesca y pedernal": "Candle",
+    },
+    "sources": {
+      "Torch": {
+        "type": "equipment",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          {
+            "bright": 2,
+            "dim": 4,
+            "angle": 360,
+          },
+        ],
+      },
+      "Lamp": {
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 3,
+            "dim": 6,
+            "angle": 360,
+          },
+        ],
+      },
+      "Lantern": {
+        "type": "equipment",
+        "consumable": false,
+        "states": 2,
+        "light": [
+          {
+            "bright": 4,
+            "dim": 10,
+            "angle": 57,
+          },
+        ],
+      },
+      "Candle": {
+        "type": "equipment",
+        "consumable": true,
+        "states": 2,
+        "light": [
+          {
+            "bright": 1,
+            "dim": 3,
+            "angle": 360,
           },
         ],
       },
