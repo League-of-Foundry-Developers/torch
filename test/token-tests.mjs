@@ -69,7 +69,7 @@ describe("Torch Token Tests >", () => {
       assert.ok(currentSource, "The token has a current source");
       assert.strictEqual(
         sources.length,
-        10,
+        18,
         "All the light sources came back as owned",
       );
     });
