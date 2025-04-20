@@ -2,6 +2,9 @@
 
 ## Middle Kingdom - v10 -> main branch
 
+### 2.21.1 - April 20, 2025 - Config Settings fix for Foundry 13
+- [BUGFIX] Adapted to support HTML changes in config settings for Foundry 13 while still supporting Foundry 12.
+
 ### 2.21.0 - April 12, 2025 - Updates for Spanish and CoC7
 - [FEATURE] Updated Spanish translations - thanks, lozonje!
 - [FEATURE] CoC7 light sources - thanks again, lozonje!

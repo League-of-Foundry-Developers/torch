@@ -106,9 +106,13 @@ class Torch {
         console.log("Torch | --- No test code found", err);
       });
   }
-  static grayOutInventorySettings(html, hide) {
+  static grayOutInventorySettings(html, hide, strategy) {
     for (const setting of ["gmUsesInventory", "playerUsesInventory"]) {
-      const div = html.querySelector(`div[data-setting-id="torch.${setting}"]`);
+      const div =
+        strategy === "v13"
+          ? html.querySelector(`label[for=settings-config-torch\\.${setting}]`)
+              .parentElement
+          : html.querySelector(`div[data-setting-id=torch\\.${setting}]`);
       const label = div.querySelector("label");
       const input = div.querySelector("input");
       const p = div.querySelector("p");
@@ -141,17 +145,27 @@ Hooks.on("preUpdateSetting", (doc, changes) => {
   }
 });
 
-Hooks.on("renderSettingsConfig", (app, [html]) => {
+Hooks.on("renderSettingsConfig", (app, hudHtml) => {
   // Set up grayed settings based on ignoreEquipment at time of render
-  const elem = html.querySelector(
+  const html = hudHtml.querySelector ? hudHtml : hudHtml[0];
+  let strategy = "v12";
+  let elem = html.querySelector(
     `div[data-setting-id="torch.ignoreEquipment"] input`,
   );
-  Torch.grayOutInventorySettings(html, elem.checked);
-  // Change what is grayed as the user changes settings
-  const ignoreEquipmentChangeListener = (event) => {
-    Torch.grayOutInventorySettings(html, event.target.checked);
-  };
-  elem.addEventListener("change", ignoreEquipmentChangeListener);
+  if (!elem) {
+    strategy = "v13";
+    elem = html.querySelector(
+      `input[id=settings-config-torch\\.ignoreEquipment]`,
+    );
+  }
+  if (elem) {
+    Torch.grayOutInventorySettings(html, elem.checked, strategy);
+    // Change what is grayed as the user changes settings
+    const ignoreEquipmentChangeListener = (event) => {
+      Torch.grayOutInventorySettings(html, event.target.checked, strategy);
+    };
+    elem.addEventListener("change", ignoreEquipmentChangeListener);
+  }
 });
 
 Hooks.once("init", () => {
