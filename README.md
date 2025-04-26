@@ -8,23 +8,25 @@ Despite all that we have added, this module continues to follow the philosophy o
 
 Out of the box, the following are available:
 
-| System | Sources |
-|--------|---------|
-| CoC7 | Torch, Lamp, Lantern, Candle, Flare 
-| dnd5e | Candle, Torch, Lamp, Bullseye Lantern, Hooded Lantern, Light, Dancing Lights
-| swade | Candle, Flashlight, Lantern, Torch
-| pf1 | Candle, Lamp, Lantern, Bullseye Lantern, Hooded Lantern, Miner's Lantern, Torch
-| pf2e | Candle, Lantern (Hooded), Lantern (Bull's Eye), Torch. Everburning Torch
-| sfrpg | "Comm Unit, Personal", "Portable Light, Beacon", "Portable Light, Flashlight", "Portable Light, Lantern", "Portable Light, Spotlight", 
-| earthdawn4e | Candle, Lantern (Hooded), Lantern (Bullseye), Torch
-| everyday-heroes | Flashlight/Headlamp, Glow Sticks
-| gurps | "Candle, Tallow", "Flashlight, Heavy", Mini Flashlight, Micro Flashlight, Survival Flashlight, Lantern, Torch, Bull's-Eye Lantern, "Electric Lantern, Small", "Electric Lantern, Large", Small Tactical Light, Large Tactical Light, Floodlight
-| dcc | Lantern, "Torch, each"
-| ose | Torches, Lantern
-| reclaim-the-wild | Candle, Firewood, Lantern (1h, R0), Lantern (1h, R1),Lantern (1h, R2),Lantern (1h, R3), Lantern (1h, R4), Lantern (1h, R5), Torch (1h, R0), Torch (1h, R1), Torch (1h, R2), Torch (1h, R3), Torch (1h, R4), Torch (1h, R5)
-| dragonbane | Lantern, Oil Lamp, Torch, Tallow Candle
-| demonlord  | Candle, Lantern, Spotlight Lantern, Torch 
-| wwn | Torch, Lantern, Flamesight, The Light of Faith
+| System | Sources | Languages |
+|--------|---------|-----------|
+| ac2d20 | Torch, Lamp, Lantern, Candle, Flare | en, es
+| CoC7 | Torch, Lamp, Lantern, Candle, Flare | en, es
+| dcc | Lantern, "Torch, each" | en
+| demonlord  | Candle, Lantern, Spotlight Lantern, Torch | en
+| dnd5e | Candle, Torch, Lamp, Bullseye Lantern, Hooded Lantern, Light, Dancing Lights | en, es
+| dragonbane | Lantern, Oil Lamp, Torch, Tallow Candle | en
+| earthdawn4e | Candle, Lantern (Hooded), Lantern (Bullseye), Torch | en
+| everyday-heroes | Flashlight/Headlamp, Glow Sticks | en
+| gurps | "Candle, Tallow", "Flashlight, Heavy", Mini Flashlight, Micro Flashlight, Survival Flashlight, Lantern, Torch, Bull's-Eye Lantern, "Electric Lantern, Small", "Electric Lantern, Large", Small Tactical Light, Large Tactical Light, Floodlight | en
+| ose | Torches, Lantern | en
+| pf1 | Candle, Lamp, Lantern, Bullseye Lantern, Hooded Lantern, Miner's Lantern, Torch | en
+| pf2e | Candle, Lantern (Hooded), Lantern (Bull's Eye), Torch. Everburning Torch | en
+| reclaim-the-wild | Candle, Firewood, Lantern (1h, R0), Lantern (1h, R1),Lantern (1h, R2),Lantern (1h, R3), Lantern (1h, R4), Lantern (1h, R5), Torch (1h, R0), Torch (1h, R1), Torch (1h, R2), Torch (1h, R3), Torch (1h, R4), Torch (1h, R5) | en
+| sfrpg | "Comm Unit, Personal", "Portable Light, Beacon", "Portable Light, Flashlight", "Portable Light, Lantern", "Portable Light, Spotlight" | en
+| swade | Candle, Flashlight, Lantern, Torch | en
+| wwn | Torch, Lantern, Flamesight, The Light of Faith | en
+| zweihander | Torch, Lamp, Lantern, Candle | en, es
 
 This module works by changing the token's light settings, so the only properties you can control are those available to a token, not those available to a light as created in Lighting Controls. 
 
