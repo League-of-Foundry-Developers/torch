@@ -87,6 +87,8 @@ describe("Torch Token Tests >", () => {
         gmInventoryItemName: "Other",
         gmUsesInventory: true,
         playerUsesInventory: true,
+        debugLogging: false,
+        durationWarningThreshold: 0.9,
       });
       let library = await SourceLibrary.load("dnd5e", 10, 20);
       // Perform test
@@ -135,6 +137,8 @@ describe("Torch Token Tests >", () => {
         gmInventoryItemName: "Other",
         gmUsesInventory: true,
         playerUsesInventory: true,
+        debugLogging: false,
+        durationWarningThreshold: 0.9,
       });
       let library = await SourceLibrary.load("dnd5e", 10, 20);
       // Perform test

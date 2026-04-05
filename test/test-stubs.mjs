@@ -58,22 +58,23 @@ export class MockToken {
     this.name = actor.name;
     this.actor = actor;
     this.actorId = this.actor.system.id;
-    this.flags = {};
+    this.flags = { torch: {} };
     this.light = {};
+    this._object = this;
     if (lightSource) {
-      this.flags.lightSource = lightSource;
+      this.flags.torch.lightSource = lightSource;
     }
     if (state) {
-      this.flags.lightSourceState = state;
+      this.flags.torch.lightSourceState = state;
     }
   }
   getFlag(modname, flagname) {
     assert.equal(modname, "torch");
-    return this.flags[flagname];
+    return this.flags.torch[flagname];
   }
   setFlag(modname, flagname, value) {
     assert.equal(modname, "torch");
-    this.flags[flagname] = value;
+    this.flags.torch[flagname] = value;
   }
   update(props) {
     for (let prop in props) {
@@ -82,7 +83,12 @@ export class MockToken {
       for (let i = 0; i < subprops.length - 1; i++) {
         where = where[subprops[i]];
       }
-      where[subprops[subprops.length - 1]] = props[prop];
+      let lastKey = subprops[subprops.length - 1];
+      if (lastKey.startsWith("-=")) {
+        delete where[lastKey.substring(2)];
+      } else {
+        where[lastKey] = props[prop];
+      }
     }
   }
 }
@@ -126,6 +132,7 @@ export class MockGame {
     this.settingsData = settings;
     this.user = { isGM: isGM };
     this.system = { id: system };
+    this.time = { worldTime: 0 };
     this.actors = {
       get: (id) => this.getActor(id),
     };

@@ -20,12 +20,42 @@ describe("Torch Library Tests >", () => {
         },
       };
       let expectedSystem = {
-        system: "fakeSystem", topology: "standard", quantity: "quantity",
+        system: "fakeSystem",
+        topology: "standard",
+        quantity: "quantity",
         sources: {
-          nuke: { name: "nuke", type: "equipment", consumable: false, states: 2, light: [{ bright: 5, dim: 10, angle: 360 }] },
-          other: { name: "other", type: "equipment", consumable: false, states: 2, light: [{ bright: 10, dim: 20, angle: 360 }] },
-          bomb: { name: "bomb", type: "equipment", consumable: false, states: 2, light: [{ bright: 5, dim: 10, angle: 360 }] },
-          alt: { name: "alt", type: "equipment", consumable: false, states: 2, light: [{ bright: 10, dim: 20, angle: 360 }] },
+          nuke: {
+            name: "nuke",
+            type: "equipment",
+            consumable: false,
+            duration: 0,
+            states: 2,
+            light: [{ bright: 5, dim: 10, angle: 360 }],
+          },
+          other: {
+            name: "other",
+            type: "equipment",
+            consumable: false,
+            duration: 0,
+            states: 2,
+            light: [{ bright: 10, dim: 20, angle: 360 }],
+          },
+          bomb: {
+            name: "bomb",
+            type: "equipment",
+            consumable: false,
+            duration: 0,
+            states: 2,
+            light: [{ bright: 5, dim: 10, angle: 360 }],
+          },
+          alt: {
+            name: "alt",
+            type: "equipment",
+            consumable: false,
+            duration: 0,
+            states: 2,
+            light: [{ bright: 10, dim: 20, angle: 360 }],
+          },
         },
         aliases: { bomb: "nuke", alt: "other" },
       };
@@ -51,17 +81,52 @@ describe("Torch Library Tests >", () => {
       };
       let ref = {
         fakeSystem: {
-          topology: "gurps", quantity: "amount", sources: {
-            other: { type: "spell", consumable: true, states: 2, light: [{ bright: 15, dim: 30, angle: 57 }] },
-            special: { type: "equipment", consumable: false, states: 2, light: [{ bright: 20, dim: 35, angle: 90 }] },
+          topology: "gurps",
+          quantity: "amount",
+          sources: {
+            other: {
+              type: "spell",
+              consumable: true,
+              states: 2,
+              light: [{ bright: 15, dim: 30, angle: 57 }],
+            },
+            special: {
+              type: "equipment",
+              consumable: false,
+              states: 2,
+              light: [{ bright: 20, dim: 35, angle: 90 }],
+            },
           },
         },
       };
       let expectedSystem = {
-        system: "fakeSystem", topology: "gurps", quantity: "amount", sources: {
-          nuke: { name: "nuke", type: "equipment", consumable: false, states: 2, light: [{ bright: 5, dim: 10, angle: 360 }] },
-          other: { name: "other", type: "spell", consumable: true, states: 2, light: [{ bright: 10, dim: 20, angle: 360 }] },
-          crazy: { name: "crazy", type: "equipment", consumable: false, states: 2, light: [{ bright: 20, dim: 35, angle: 90 }] },
+        system: "fakeSystem",
+        topology: "gurps",
+        quantity: "amount",
+        sources: {
+          nuke: {
+            name: "nuke",
+            type: "equipment",
+            consumable: false,
+            duration: 0,
+            states: 2,
+            light: [{ bright: 5, dim: 10, angle: 360 }],
+          },
+          other: {
+            name: "other",
+            type: "spell",
+            consumable: true,
+            duration: 0,
+            states: 2,
+            light: [{ bright: 10, dim: 20, angle: 360 }],
+          },
+          crazy: {
+            name: "crazy",
+            type: "equipment",
+            consumable: false,
+            states: 2,
+            light: [{ bright: 20, dim: 35, angle: 90 }],
+          },
         },
         aliases: { crazy: "special" },
       };
@@ -74,16 +139,53 @@ describe("Torch Library Tests >", () => {
       let lib = {
         fakeSystem: {
           system: "aSystem", // While this test shows it is permitted, it isn't wise to change the system property to not match the key.
-          topology: "gurps", quantity: "count", sources: {
-            nuke: { name: "Nuke2", type: "spell", consumable: true, states: 3, light: [ { bright: 15, dim: 20, angle: 360 }, { bright: 20, dim: 40, angle: 57 } ] },
-            other: { name: "Other", type: "spell", consumable: false, states: 2, light: [{ bright: 10, dim: 20, angle: 360 }] },
+          topology: "gurps",
+          quantity: "count",
+          sources: {
+            nuke: {
+              name: "Nuke2",
+              type: "spell",
+              consumable: true,
+              states: 3,
+              light: [
+                { bright: 15, dim: 20, angle: 360 },
+                { bright: 20, dim: 40, angle: 57 },
+              ],
+            },
+            other: {
+              name: "Other",
+              type: "spell",
+              consumable: false,
+              states: 2,
+              light: [{ bright: 10, dim: 20, angle: 360 }],
+            },
           },
         },
       };
       let expectedSystem = {
-        system: "aSystem", topology: "gurps", quantity: "count", sources: {
-          nuke: { name: "Nuke2", type: "spell", consumable: true, states: 3, light: [ { bright: 15, dim: 20, angle: 360 }, { bright: 20, dim: 40, angle: 57 } ] },
-          other: { name: "Other", type: "spell", consumable: false, states: 2, light: [{ bright: 10, dim: 20, angle: 360 }] },
+        system: "aSystem",
+        topology: "gurps",
+        quantity: "count",
+        sources: {
+          nuke: {
+            name: "Nuke2",
+            type: "spell",
+            consumable: true,
+            duration: 0,
+            states: 3,
+            light: [
+              { bright: 15, dim: 20, angle: 360 },
+              { bright: 20, dim: 40, angle: 57 },
+            ],
+          },
+          other: {
+            name: "Other",
+            type: "spell",
+            consumable: false,
+            duration: 0,
+            states: 2,
+            light: [{ bright: 10, dim: 20, angle: 360 }],
+          },
         },
       };
       /* eslint-enable prettier/prettier */
@@ -95,29 +197,68 @@ describe("Torch Library Tests >", () => {
       /* eslint-disable prettier/prettier */
       let lib = {
         fakeSystem: {
-          system: "aSystem", topology: "gurps", quantity: "count", sources: {
-            nuke: { name: "Nuke2", type: "spell", consumable: "true", states: 3, light: [
-                { bright: 15, dim: 20, angle: 360 }, { bright: 20, dim: 40, angle: 57 },
+          system: "aSystem",
+          topology: "gurps",
+          quantity: "count",
+          sources: {
+            nuke: {
+              name: "Nuke2",
+              type: "spell",
+              consumable: "true",
+              states: 3,
+              light: [
+                { bright: 15, dim: 20, angle: 360 },
+                { bright: 20, dim: 40, angle: 57 },
               ],
             },
-            other: { name: "Other", type: "spell", consumable: "false", states: 2, light: [{ bright: 10, dim: 20, angle: 360 }] },
+            other: {
+              name: "Other",
+              type: "spell",
+              consumable: "false",
+              states: 2,
+              light: [{ bright: 10, dim: 20, angle: 360 }],
+            },
           },
         },
       };
       let ref = {
         fakeSystem: {
-          topology: "gurps", quantity: "amount", sources: {
-            other: { type: "spell", consumable: true, states: 2, light: [{ bright: 15, dim: 30, angle: 57 }] },
+          topology: "gurps",
+          quantity: "amount",
+          sources: {
+            other: {
+              type: "spell",
+              consumable: true,
+              states: 2,
+              light: [{ bright: 15, dim: 30, angle: 57 }],
+            },
           },
         },
       };
       let expectedSystem = {
-        system: "aSystem", topology: "gurps", quantity: "count", sources: {
-          nuke: { name: "Nuke2", type: "spell", consumable: true, states: 3, light: [
-              { bright: 15, dim: 20, angle: 360 }, { bright: 20, dim: 40, angle: 57 },
+        system: "aSystem",
+        topology: "gurps",
+        quantity: "count",
+        sources: {
+          nuke: {
+            name: "Nuke2",
+            type: "spell",
+            consumable: true,
+            duration: 0,
+            states: 3,
+            light: [
+              { bright: 15, dim: 20, angle: 360 },
+              { bright: 20, dim: 40, angle: 57 },
             ],
           },
-          other: { name: "Other", type: "spell", consumable: false, states: 2, light: [{ bright: 10, dim: 20, angle: 360 }] },
+          other: {
+            name: "Other",
+            type: "spell",
+            consumable: false,
+            duration: 0,
+            states: 2,
+            light: [{ bright: 10, dim: 20, angle: 360 }],
+          },
         },
       };
       /* eslint-enable prettier/prettier */
@@ -130,15 +271,42 @@ describe("Torch Library Tests >", () => {
   const testLights = {
     dnd5e: {
       sources: {
-        "Phantom Torch": { consumable: true, light: { bright: 5, dim: 20, angle: 360, color: "#ff9329", alpha: 0.6 } },
-        Candle: { consumable: true, light: [ 
-          { bright: 10, dim: 15, angle: 360, color: "#ff9329", alpha: 0.5, animation: { type: "torch", speed: 5, intensity: 5, reverse: false } }
-        ]},
+        "Phantom Torch": {
+          consumable: true,
+          light: {
+            bright: 5,
+            dim: 20,
+            angle: 360,
+            color: "#ff9329",
+            alpha: 0.6,
+          },
+        },
+        Candle: {
+          consumable: true,
+          light: [
+            {
+              bright: 10,
+              dim: 15,
+              angle: 360,
+              color: "#ff9329",
+              alpha: 0.5,
+              animation: {
+                type: "torch",
+                speed: 5,
+                intensity: 5,
+                reverse: false,
+              },
+            },
+          ],
+        },
       },
     },
     test: {
-      topology: "gurps", sources: {
-        Flashlight: { light: { bright: 10, dim: 0, angle: 3, color: "#ffd6aa", alpha: 1.0 } },
+      topology: "gurps",
+      sources: {
+        Flashlight: {
+          light: { bright: 10, dim: 0, angle: 3, color: "#ffd6aa", alpha: 1.0 },
+        },
       },
     },
   };
@@ -200,7 +368,13 @@ describe("Torch Library Tests >", () => {
         "no common library loaded initially",
       );
       /* eslint-disable-next-line prettier/prettier */
-      let library = await SourceLibrary.load("dnd5e", 10, 50, "Torch", testLights);
+      let library = await SourceLibrary.load(
+        "dnd5e",
+        10,
+        50,
+        "Torch",
+        testLights,
+      );
       assert.ok(SourceLibrary.commonLibrary, "common library loaded");
       let torch = library.getLightSource("torch");
       assert.deepEqual(
@@ -212,7 +386,14 @@ describe("Torch Library Tests >", () => {
       assert.deepEqual(
         candle.light[0],
         /* eslint-disable-next-line prettier/prettier */
-        { bright: 10, dim: 15, angle: 360, color: "#ff9329", alpha: 0.5, animation: { type: "torch", speed: 5, intensity: 5, reverse: false } },
+        {
+          bright: 10,
+          dim: 15,
+          angle: 360,
+          color: "#ff9329",
+          alpha: 0.5,
+          animation: { type: "torch", speed: 5, intensity: 5, reverse: false },
+        },
         "candle from user library came in correctly",
       );
       let phantom = library.getLightSource("phantom torch");

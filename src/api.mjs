@@ -97,4 +97,10 @@ export default class TorchAPI {
     let token = await this.#setup(sceneId, tokenId);
     return await token.lightSourceIsExhausted(source);
   }
+
+  async remainingDuration(sceneId, tokenId) {
+    this.#parmCheck2("remainingDuration", sceneId, tokenId);
+    let token = await this.#setup(sceneId, tokenId);
+    return token.remainingDuration();
+  }
 }

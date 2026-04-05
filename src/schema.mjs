@@ -166,6 +166,12 @@ export default {
                 "The number of states this item goes through - this allows for multistate sources (like high-low-off) - 2 by default",
               type: "integer",
             },
+            duration: {
+              description:
+                "How long the light source lasts in minutes of world time. 0 or omitted means infinite (no auto-extinguish).",
+              type: "number",
+              minimum: 0,
+            },
             light: {
               description:
                 "The light definitions - a single one if only one is needed or an array",

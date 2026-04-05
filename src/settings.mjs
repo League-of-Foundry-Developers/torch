@@ -43,6 +43,14 @@ export default class Settings {
       : false;
   }
 
+  static get debugLogging() {
+    return game.settings.get("torch", "debugLogging");
+  }
+
+  static get durationWarningThreshold() {
+    return game.settings.get("torch", "durationWarningThreshold");
+  }
+
   static get helpText() {
     let turnOffLights = game.i18n.localize("torch.help.turnOffAllLights");
     let ctrlOnClick = game.i18n.localize("torch.help.holdCtrlOnClick");
@@ -100,6 +108,27 @@ export default class Settings {
         type: Boolean,
       });
     }
+    game.settings.register("torch", "debugLogging", {
+      name: game.i18n.localize("torch.settings.debugLogging.name"),
+      hint: game.i18n.localize("torch.settings.debugLogging.hint"),
+      scope: "world",
+      config: true,
+      default: false,
+      type: Boolean,
+    });
+    game.settings.register("torch", "durationWarningThreshold", {
+      name: game.i18n.localize("torch.settings.durationWarningThreshold.name"),
+      hint: game.i18n.localize("torch.settings.durationWarningThreshold.hint"),
+      scope: "world",
+      config: true,
+      default: 0.9,
+      type: Number,
+      range: {
+        min: 0,
+        max: 1,
+        step: 0.05,
+      },
+    });
     game.settings.register("torch", "fallbackSourceName", {
       name: game.i18n.localize("torch.settings.fallbackSourceName.name"),
       hint: game.i18n.localize("torch.settings.fallbackSourceName.hint"),

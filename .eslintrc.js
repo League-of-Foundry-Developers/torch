@@ -12,6 +12,7 @@ module.exports = {
   },
   globals: {
     $: "readable",
+    ChatMessage: "readable",
     CONST: "readable",
     Dialog: "readable",
     Hooks: "readable",
@@ -27,9 +28,9 @@ module.exports = {
         "prettier/prettier": [
           "error",
           {
-            "singleQuote": false,
-            "printWidth": 120,
-            "quoteProps": "preserve",
+            singleQuote: false,
+            printWidth: 120,
+            quoteProps: "preserve",
           },
         ],
       },
@@ -39,6 +40,7 @@ module.exports = {
       globals: {
         it: "readable",
         describe: "readable",
+        before: "readable",
         beforeEach: "readable",
         afterEach: "readable",
       },

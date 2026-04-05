@@ -6,15 +6,36 @@ import SourceLibrary from "../src/library.mjs";
 const testLights = {
   dnd5e: {
     sources: {
-      "Phantom Torch": { consumable: true, light: { bright: 5, dim: 20, angle: 360, color: "#ff9329", alpha: 0.6 } },
-      Candle: { consumable: true, light: [ 
-        { bright: 10, dim: 15, angle: 360, color: "#ff9329", alpha: 0.5, animation: { type: "torch", speed: 5, intensity: 5, reverse: false } }
-      ]},
+      "Phantom Torch": {
+        consumable: true,
+        light: { bright: 5, dim: 20, angle: 360, color: "#ff9329", alpha: 0.6 },
+      },
+      Candle: {
+        consumable: true,
+        light: [
+          {
+            bright: 10,
+            dim: 15,
+            angle: 360,
+            color: "#ff9329",
+            alpha: 0.5,
+            animation: {
+              type: "torch",
+              speed: 5,
+              intensity: 5,
+              reverse: false,
+            },
+          },
+        ],
+      },
     },
   },
   test: {
-    topology: "gurps", sources: {
-      Flashlight: { light: { bright: 10, dim: 0, angle: 3, color: "#ffd6aa", alpha: 1.0 } },
+    topology: "gurps",
+    sources: {
+      Flashlight: {
+        light: { bright: 10, dim: 0, angle: 3, color: "#ffd6aa", alpha: 1.0 },
+      },
     },
   },
 };
@@ -24,7 +45,13 @@ describe("Topology Tests >", () => {
   describe("Standard library topology test >", () => {
     it("Actor inventory settings for Versatile in D&D5e with a user library", async () => {
       /* eslint-disable-next-line prettier/prettier */
-      let library = await SourceLibrary.load("dnd5e", 50, 10, "Torch", testLights);
+      let library = await SourceLibrary.load(
+        "dnd5e",
+        50,
+        10,
+        "Torch",
+        testLights,
+      );
       let versatile = {
         items: [
           new MockItem("Torch", 5),
@@ -65,7 +92,13 @@ describe("Topology Tests >", () => {
     });
     it("Actor image settings for Versatile in D&D5e with a user library", async () => {
       /* eslint-disable-next-line prettier/prettier */
-      let library = await SourceLibrary.load("dnd5e", 50, 10, "Torch", testLights);
+      let library = await SourceLibrary.load(
+        "dnd5e",
+        50,
+        10,
+        "Torch",
+        testLights,
+      );
       let versatile = {
         items: [
           new MockItem("Torch", 5),
@@ -94,7 +127,13 @@ describe("Topology Tests >", () => {
 
     it("Actor light sources for Lightbearer, Breaker, Empty, and Bic in D&D5e with a user library", async () => {
       /* eslint-disable-next-line prettier/prettier */
-      let library = await SourceLibrary.load("dnd5e", 50, 10, "Torch", testLights);
+      let library = await SourceLibrary.load(
+        "dnd5e",
+        50,
+        10,
+        "Torch",
+        testLights,
+      );
 
       let breaker = {
         items: [new MockItem("Torch"), new MockItem("Dancing Lights")],
@@ -176,16 +215,26 @@ describe("Topology Tests >", () => {
     });
   });
   /* eslint-disable prettier/prettier */
-  const MiniFlashlightGURPSSource = 
-  {
-    image: '/icons/svg/light.svg', name: 'Mini Flashlight', type: 'equipment', consumable: false, states: 2, light: {
-      0: { bright: 4, dim: 5, angle: 6, color: '#ffd6aa', alpha: 1 }
-    }
+  const MiniFlashlightGURPSSource = {
+    image: "/icons/svg/light.svg",
+    name: "Mini Flashlight",
+    type: "equipment",
+    consumable: false,
+    duration: 0,
+    states: 2,
+    light: {
+      0: { bright: 4, dim: 5, angle: 6, color: "#ffd6aa", alpha: 1 },
+    },
   };
-  const TorchGURPSSource = 
-  {
-    image: '/icons/svg/light.svg', name: 'Torch', type: 'equipment', consumable: true, states: 2, light: {
-      0: { bright: 9, dim: 10, angle: 360, color: '#ff9329', alpha: 1 }
+  const TorchGURPSSource = {
+    image: "/icons/svg/light.svg",
+    name: "Torch",
+    type: "equipment",
+    consumable: true,
+    duration: 0,
+    states: 2,
+    light: {
+      0: { bright: 9, dim: 10, angle: 360, color: "#ff9329", alpha: 1 },
     },
   };
   /* eslint-enable prettier/prettier */
@@ -294,6 +343,7 @@ describe("Topology Tests >", () => {
             name: "Self",
             type: "none",
             consumable: false,
+            duration: 0,
             image: "/icons/svg/light.svg",
             states: 2,
             light: {

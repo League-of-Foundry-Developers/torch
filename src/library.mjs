@@ -142,6 +142,9 @@ export default class SourceLibrary {
         if (sources[source].consumable === "false") {
           sources[source].consumable = false;
         }
+        if (sources[source].duration === undefined) {
+          sources[source].duration = refsrc ? refsrc.duration || 0 : 0;
+        }
         // Normalize lights to be an array, not a single object
         if (
           sources[source].light &&
@@ -378,6 +381,7 @@ let mergeLibraries = function (
           type: userSource["type"],
           consumable: nothingIsConsumable ? false : userSource["consumable"],
           states: userSource["states"],
+          duration: userSource["duration"] || 0,
           light: Object.assign({}, userSource["light"]),
         };
       }
@@ -398,6 +402,7 @@ let mergeLibraries = function (
               ? false
               : commonSource["consumable"],
             states: commonSource["states"],
+            duration: commonSource["duration"] || 0,
             light: Object.assign({}, commonSource["light"]),
           };
         }
